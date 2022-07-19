@@ -1,20 +1,57 @@
 import { useState } from 'react';
 import { HStack, Heading, IconButton, VStack, useTheme, Text, FlatList } from 'native-base';
-import { SignOut } from 'phosphor-react-native';
 
+import { SignOut } from 'phosphor-react-native';
 import Logo from '../assets/logo_secondary.svg';
 
 import { Filter } from '../comp/Filter';
 import { Order, OrderProps } from '../comp/Order';
+import { Button } from '../comp/Button';
 
 export function Home() {
   const [statusSelected, setStatusSelected] = useState<'open' | 'closed'>('open');
-  const [orders, setOrders] = useState<OrderProps[]>([{
-    id: '123',
-    patrimony: '123',
-    when: '18/05/2020 às 10:00',
-    status: 'open',
-  }]);
+  const [orders, setOrders] = useState<OrderProps[]>([
+    {
+      id: '1',
+      patrimony: '123',
+      when: '18/05/2020 às 10:00',
+      status: 'open',
+    },
+    {
+      id: '2',
+      patrimony: '123',
+      when: '18/05/2020 às 10:00',
+      status: 'open',
+    },
+    {
+      id: '3',
+      patrimony: '123',
+      when: '18/05/2020 às 10:00',
+      status: 'open',
+    },
+    {
+      id: '4',
+      patrimony: '123',
+      when: '18/05/2020 às 10:00',
+      status: 'open',
+    },
+    {
+      id: '5',
+      patrimony: '123',
+      when: '18/05/2020 às 10:00',
+      status: 'open',
+    }, {
+      id: '6',
+      patrimony: '123',
+      when: '18/05/2020 às 10:00',
+      status: 'open',
+    }, {
+      id: '7',
+      patrimony: '123',
+      when: '18/05/2020 às 10:00',
+      status: 'open',
+    },
+  ]);
 
   const { colors } = useTheme();
 
@@ -62,7 +99,18 @@ export function Home() {
           data={orders}
           keyExtractor={(item) => item.id}
           renderItem={({ item }) => <Order data={item} />}
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={{ paddingBottom: 100 }}
+          ListEmptyComponent={() => (
+            <VStack w="full" justifyContent="center" alignItems="center" mt={8}>
+              <Text color="gray.200">
+                Nenhum chamado {statusSelected === 'open' ? 'em andamento' : 'finalizado'} encontrado
+              </Text>
+            </VStack>
+          )}
         />
+        <Button title="Nova Solicitação" />
+
       </VStack>
     </VStack>
   );
