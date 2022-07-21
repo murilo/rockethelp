@@ -1,5 +1,5 @@
 import { VStack, Text } from 'native-base';
-import { Header } from '../comp/Header';
+import { Header } from '../components/Header';
 import { useRoute } from '@react-navigation/native';
 
 type RouteParams = {

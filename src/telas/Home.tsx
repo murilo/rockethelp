@@ -5,9 +5,9 @@ import { useNavigation } from '@react-navigation/native';
 import { SignOut } from 'phosphor-react-native';
 import Logo from '../assets/logo_secondary.svg';
 
-import { Filter } from '../comp/Filter';
-import { Order, OrderProps } from '../comp/Order';
-import { Button } from '../comp/Button';
+import { Filter } from '../components/Filter';
+import { Order, OrderProps } from '../components/Order';
+import { Button } from '../components/Button';
 import { Register } from './Register';
 
 export function Home() {

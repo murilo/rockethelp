@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { VStack, Heading, Icon, useTheme } from 'native-base';
 import Logo from '../assets/logo_primary.svg';
-import { Input } from '../comp/Input';
-import { Button } from '../comp/Button';
+import { Input } from '../components/Input';
+import { Button } from '../components/Button';
 import { Envelope, Key } from 'phosphor-react-native';
 
 export function SignIn() {
