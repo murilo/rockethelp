@@ -1,5 +1,5 @@
 import { NativeBaseProvider, StatusBar } from 'native-base';
-import { SignIn } from './src/telas/SignIn';
+import { SignIn } from './src/screens/SignIn';
 import { Routes } from './src/routes';
 import { THEME } from './src/styles/theme';
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';

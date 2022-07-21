@@ -1,8 +1,8 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import { Home } from '../telas/Home';
-import { Details } from '../telas/Details';
-import { Register } from '../telas/Register';
+import { Home } from '../screens/Home';
+import { Details } from '../screens/Details';
+import { Register } from '../screens/Register';
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
