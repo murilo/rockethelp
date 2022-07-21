@@ -1,7 +1,6 @@
 # rockethelp
 
-Semana de Ignite Lab 3 da Rocketseat para aprender um pouco mais sobre o desenvolvimento mobile com o **React Native**
-utilizando o **Expo Bare Workflow e Firebase**.
+Semana de Ignite Lab 3 da Rocketseat para aprender um pouco mais sobre o desenvolvimento mobile com o **React Native**:
 
 Nesta edição do evento foi desenvolvido um app de solicitações de
 manutenção de equipamentos internos de uma empresa. Mas é claro que a
